@@ -1,0 +1,9 @@
+Sub For_Ex1()
+    Dim i As Long
+    Range("B27").Select
+    For i = 0 To 40
+        ActiveCell.Offset(0, 0) = Cells(i + 2, "I")
+        ActiveCell.Offset(i - 25, 8) = Cells(28, "B")
+        ActiveCell.Offset(i - 25, 9) = Cells(29, "B")
+    Next i
+End Sub
